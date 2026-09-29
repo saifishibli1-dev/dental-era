@@ -9,12 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-
+    "@tailwindcss/vite": "latest",
+    "@vitejs/plugin-react": "latest",
+    "express": "latest",
+    "lucide-react": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "tailwindcss": "latest",
+    "vite": "latest"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",
-    
-    "typescript": "~5.8.2",
-    "vite": "^6.2.0"
+    "typescript": "^5.8.2"
   }
 }
