@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Plus Jakarta Sans", system-ui, -apple-system, sans-serif;
+  
+  --color-warm-ivory: #F3EFE7;
+  --color-alternate: #EAE7DE;
+  --color-nav: #FAF9F5;
+  --color-card: #FFFFFF;
+  --color-dental-teal: #006B68;
+  --color-muted-sage: #8FA9A1;
+  --color-charcoal: #202423;
+  --color-warm-slate: #59615F;
+  --color-soft-stone: #D8D5CC;
+}
+
+@layer base {
+  html, body, #root {
+    background-color: #F3EFE7;
+    color: #202423;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+    min-height: 100%;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+    color: #202423;
+  }
+}
+
+/* Image fallback and shimmer utility */
+.clinic-img {
+  transition: opacity 0.4s ease-in-out, transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.clinic-img:hover {
+  transform: scale(1.01);
+}
+
+/* Custom scroll progress indicator support */
+#scroll-progress {
+  transform-origin: left;
+}
+
